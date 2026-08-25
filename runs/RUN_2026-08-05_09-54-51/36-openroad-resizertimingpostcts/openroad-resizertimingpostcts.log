@@ -1,0 +1,110 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_09-54-51/33-openroad-detailedplacement/alu8bit.odb'…
+Reading design constraints file at '/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2
+[INFO] Setting input delay to: 2
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO] Setting RC values…
+[INFO RSZ-0094] Found 8 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 8 out of 8 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |  -14.538 |      -43.3 |      8 | op_out[0]
+       10 |       0 |       5 |        0 |      0 |     4 |  -14.273 |      -42.4 |      8 | op_out[0]
+       20 |       0 |      10 |        8 |      0 |     5 |  -13.293 |      -40.5 |      8 | op_out[0]
+       30 |       0 |      19 |        8 |      0 |     6 |  -12.898 |      -39.1 |      8 | op_out[0]
+       40 |       0 |      25 |       13 |      0 |     8 |  -12.699 |      -38.6 |      8 | op_out[0]
+       50 |       0 |      31 |       13 |      0 |    12 |  -12.498 |      -37.5 |      8 | op_out[0]
+       60 |       0 |      36 |       15 |      0 |    16 |  -12.370 |      -37.5 |      8 | op_out[0]
+       70 |       0 |      41 |       15 |      0 |    21 |  -12.222 |      -36.8 |      8 | op_out[0]
+       80 |       0 |      48 |       15 |      1 |    23 |  -11.960 |      -36.4 |      8 | op_out[0]
+       90 |       0 |      54 |       15 |      3 |    25 |  -11.863 |      -35.9 |      8 | op_out[0]
+      100 |       0 |      57 |       17 |      4 |    30 |  -11.768 |      -35.7 |      8 | op_out[0]
+      100 |       0 |      55 |       16 |      4 |    26 |  -11.754 |      -35.6 |      8 | op_out[0]
+      110 |       0 |      62 |       18 |      4 |    27 |  -11.750 |      -35.4 |      8 | op_out[0]
+      115 |       0 |      65 |       18 |      4 |    29 |  -11.748 |      -35.4 |      8 | op_out[0]
+      120 |       0 |      69 |       18 |      4 |    29 |  -11.748 |      -35.1 |      8 | op_out[0]
+      123 |       0 |      70 |       18 |      4 |    29 |  -11.748 |      -35.3 |      8 | op_out[0]
+      130 |       0 |      74 |       20 |      4 |    30 |  -11.804 |      -35.5 |      8 | op_out[0]
+      140 |       0 |      83 |       22 |      4 |    30 |  -11.750 |      -35.3 |      8 | op_out[0]
+      143 |       0 |      78 |       20 |      4 |    29 |  -11.748 |      -35.3 |      8 | op_out[0]
+      150 |       0 |      83 |       20 |      4 |    30 |  -11.748 |      -34.9 |      8 | op_out[0]
+      160 |       0 |      91 |       20 |      4 |    32 |  -11.748 |      -34.3 |      8 | op_out[0]
+      170 |       0 |      97 |       22 |      4 |    35 |  -11.748 |      -33.5 |      8 | op_out[0]
+      180 |       0 |     104 |       22 |      5 |    37 |  -11.748 |      -33.2 |      8 | op_out[0]
+      190 |       0 |     111 |       22 |      6 |    39 |  -11.748 |      -33.0 |      8 | op_out[0]
+      191 |       0 |      96 |       21 |      4 |    31 |  -11.748 |      -34.3 |      8 | op_out[0]
+      200 |       0 |     102 |       23 |      4 |    32 |  -11.748 |      -33.9 |      8 | op_out[0]
+      210 |       0 |     110 |       23 |      5 |    33 |  -11.748 |      -33.6 |      8 | op_out[0]
+      220 |       0 |     118 |       23 |      6 |    34 |  -11.748 |      -33.3 |      8 | op_out[0]
+      230 |       0 |     125 |       25 |      6 |    36 |  -11.748 |      -33.5 |      8 | op_out[0]
+      240 |       0 |     134 |       25 |      6 |    37 |  -11.748 |      -33.2 |      8 | op_out[0]
+      250 |       0 |     141 |       25 |      7 |    39 |  -11.748 |      -32.9 |      8 | op_out[0]
+      255 |       0 |     121 |       25 |      4 |    33 |  -11.748 |      -33.7 |      8 | op_out[0]
+      260 |       0 |     124 |       25 |      4 |    34 |  -11.779 |      -33.8 |      8 | op_out[0]
+      262 |       0 |     123 |       25 |      4 |    33 |  -11.748 |      -33.7 |      8 | op_out[0]
+      270 |       0 |     129 |       25 |      4 |    34 |  -11.748 |      -33.6 |      8 | op_out[0]
+      280 |       0 |     137 |       25 |      5 |    35 |  -11.748 |      -33.2 |      8 | op_out[0]
+      290 |       0 |     144 |       27 |      6 |    36 |  -11.748 |      -33.3 |      8 | op_out[0]
+      292 |       0 |     137 |       26 |      5 |    35 |  -11.748 |      -33.3 |      8 | op_out[0]
+     293* |       0 |     137 |       26 |      5 |    35 |  -11.748 |      -33.3 |      8 | op_out[0]
+     294* |       0 |     137 |       26 |      5 |    35 |  -11.748 |      -33.3 |      8 | op_out[0]
+     295* |       0 |     137 |       26 |      5 |    35 |  -11.748 |      -33.3 |      8 | op_out[0]
+     296* |       0 |     137 |       26 |      5 |    35 |  -11.748 |      -33.3 |      8 | op_out[0]
+     297* |       0 |     137 |       26 |      5 |    35 |  -11.748 |      -33.3 |      8 | op_out[0]
+     298* |       0 |     137 |       26 |      5 |    35 |  -11.748 |      -33.3 |      8 | op_out[0]
+     300* |       0 |     138 |       26 |      5 |    35 |  -11.748 |      -33.2 |      8 | op_out[0]
+     300* |       0 |     138 |       26 |      5 |    35 |  -11.748 |      -33.2 |      8 | op_out[0]
+     301* |       0 |     138 |       26 |      5 |    35 |  -11.748 |      -33.2 |      8 | op_out[0]
+    final |       0 |     138 |       26 |      5 |    35 |  -11.748 |      -33.2 |      8 | op_out[0]
+---------------------------------------------------------------------------------------------------
+[INFO RSZ-0040] Inserted 10 buffers.
+[INFO RSZ-0041] Resized 138 instances.
+[INFO RSZ-0043] Swapped pins on 35 instances.
+[INFO RSZ-0049] Cloned 5 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement        205.0 u
+average displacement        0.2 u
+max displacement            7.3 u
+original HPWL           10975.7 u
+legalized HPWL          11508.4 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 255 instances
+[INFO DPL-0021] HPWL before           11508.4 u
+[INFO DPL-0022] HPWL after            11101.8 u
+[INFO DPL-0023] HPWL delta               -3.5 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                88     330.32
+  Tap cell                                207     259.00
+  Timing Repair Buffer                     84     604.33
+  Inverter                                 19      71.32
+  Multi-Input combinational cell          447    3427.04
+  Total                                   845    4692.00
+Writing OpenROAD database to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_09-54-51/36-openroad-resizertimingpostcts/alu8bit.odb'…
+Writing netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_09-54-51/36-openroad-resizertimingpostcts/alu8bit.nl.v'…
+Writing powered netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_09-54-51/36-openroad-resizertimingpostcts/alu8bit.pnl.v'…
+Writing layout to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_09-54-51/36-openroad-resizertimingpostcts/alu8bit.def'…
+Writing timing constraints to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_09-54-51/36-openroad-resizertimingpostcts/alu8bit.sdc'…

@@ -1,0 +1,66 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-37-55/27-openroad-globalplacement/alu8bit.odb'…
+Reading design constraints file at '/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2
+[INFO] Setting input delay to: 2
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 20 input buffers.
+[INFO RSZ-0028] Inserted 8 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |       514
+      100 |      89 |       2 |             2 |       414
+      200 |     183 |       3 |             3 |       314
+      300 |     276 |       3 |             3 |       214
+      400 |     371 |       3 |             4 |       114
+      500 |     480 |      41 |            23 |        14
+    final |     480 |      41 |            23 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 4 slew violations.
+[INFO RSZ-0035] Found 19 fanout violations.
+[INFO RSZ-0038] Inserted 41 buffers in 23 nets.
+[INFO RSZ-0039] Resized 480 instances.
+Placement Analysis
+---------------------------------
+total displacement       1081.0 u
+average displacement        1.4 u
+max displacement            9.0 u
+original HPWL           10071.1 u
+legalized HPWL          11002.2 u
+delta HPWL                    9 %
+
+[INFO DPL-0020] Mirrored 225 instances
+[INFO DPL-0021] HPWL before           11002.2 u
+[INFO DPL-0022] HPWL after            10678.6 u
+[INFO DPL-0023] HPWL delta               -2.9 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                76     285.27
+  Tap cell                                140     175.17
+  Timing Repair Buffer                     69     384.12
+  Inverter                                 19      71.32
+  Multi-Input combinational cell          447    3243.11
+  Total                                   751    4158.99
+Writing OpenROAD database to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-37-55/31-openroad-repairdesignpostgpl/alu8bit.odb'…
+Writing netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-37-55/31-openroad-repairdesignpostgpl/alu8bit.nl.v'…
+Writing powered netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-37-55/31-openroad-repairdesignpostgpl/alu8bit.pnl.v'…
+Writing layout to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-37-55/31-openroad-repairdesignpostgpl/alu8bit.def'…
+Writing timing constraints to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-37-55/31-openroad-repairdesignpostgpl/alu8bit.sdc'…

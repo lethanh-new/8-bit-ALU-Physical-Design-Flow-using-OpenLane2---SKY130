@@ -1,0 +1,66 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-41-28/33-openroad-detailedplacement/alu8bit.odb'…
+Reading design constraints file at '/home/letienthanh/8bitalu/constraints/alu.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[WARNING STA-0450] virtual clock virtual_clk can not be propagated.
+[WARNING STA-0450] virtual clock virtual_clk can not be propagated.
+[INFO] Setting RC values…
+[INFO RSZ-0094] Found 2 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 2 out of 2 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |   -3.864 |       -4.7 |      2 | op_out[0]
+       10 |       0 |       5 |        0 |      1 |     3 |   -3.392 |       -3.7 |      2 | op_out[0]
+       20 |       0 |      10 |        2 |      1 |     7 |   -2.690 |       -2.7 |      2 | op_out[0]
+       30 |       0 |      17 |        5 |      1 |     9 |   -2.449 |       -2.4 |      2 | op_out[0]
+       40 |       0 |      20 |       19 |      1 |    12 |   -2.266 |       -2.3 |      2 | op_out[0]
+       50 |       0 |      23 |       37 |      1 |    15 |   -2.373 |       -2.4 |      2 | op_out[0]
+       60 |       0 |      28 |       40 |      1 |    19 |   -2.002 |       -2.0 |      2 | op_out[0]
+       70 |       0 |      33 |       42 |      1 |    23 |   -1.718 |       -1.7 |      2 | op_out[0]
+       80 |       0 |      39 |       44 |      1 |    26 |   -1.575 |       -1.6 |      2 | op_out[0]
+       87 |       0 |      44 |       48 |      1 |    26 |   -1.526 |       -1.5 |      2 | op_out[0]
+       88 |       0 |      44 |       48 |      1 |    26 |   -1.526 |       -1.5 |      1 | op_out[0]
+      89* |       0 |      44 |       48 |      1 |    26 |   -1.526 |       -1.5 |      1 | op_out[0]
+    final |       0 |      44 |       48 |      1 |    26 |   -1.526 |       -1.5 |      1 | op_out[0]
+---------------------------------------------------------------------------------------------------
+[INFO RSZ-0040] Inserted 33 buffers.
+[INFO RSZ-0041] Resized 44 instances.
+[INFO RSZ-0043] Swapped pins on 26 instances.
+[INFO RSZ-0049] Cloned 1 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement        259.6 u
+average displacement        0.3 u
+max displacement            9.6 u
+original HPWL           10228.3 u
+legalized HPWL          10686.8 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 230 instances
+[INFO DPL-0021] HPWL before           10686.8 u
+[INFO DPL-0022] HPWL after            10314.1 u
+[INFO DPL-0023] HPWL delta               -3.5 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                76     285.27
+  Tap cell                                140     175.17
+  Timing Repair Buffer                     73     581.81
+  Inverter                                 19      76.32
+  Multi-Input combinational cell          448    3355.72
+  Total                                   756    4474.29
+Writing OpenROAD database to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-41-28/35-openroad-resizertimingpostcts/alu8bit.odb'…
+Writing netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-41-28/35-openroad-resizertimingpostcts/alu8bit.nl.v'…
+Writing powered netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-41-28/35-openroad-resizertimingpostcts/alu8bit.pnl.v'…
+Writing layout to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-41-28/35-openroad-resizertimingpostcts/alu8bit.def'…
+Writing timing constraints to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_13-41-28/35-openroad-resizertimingpostcts/alu8bit.sdc'…

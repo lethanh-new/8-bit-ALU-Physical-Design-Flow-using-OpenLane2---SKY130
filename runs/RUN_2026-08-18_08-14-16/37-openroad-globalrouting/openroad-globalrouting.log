@@ -1,0 +1,77 @@
+Reading OpenROAD database at '/home/letienthanh/8bitalu/runs/RUN_2026-08-18_08-14-16/35-openroad-resizertimingpostcts/alu8bit.odb'…
+Reading library file at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/home/letienthanh/8bitalu/constraints/alu.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[WARNING STA-0450] virtual clock virtual_clk can not be propagated.
+[WARNING STA-0450] virtual clock virtual_clk can not be propagated.
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 15
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal       5816          2879          50.50%
+met2       Vertical         4548          2850          37.34%
+met3       Horizontal       2908          1920          33.98%
+met4       Vertical         1866          1128          39.55%
+met5       Horizontal        572           270          52.80%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 2871
+[INFO GRT-0198] Via related Steiner nodes: 45
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 3542
+[INFO GRT-0112] Final usage 3D: 12297
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1              2879           772           26.81%             0 /  0 /  0
+met2              2850           830           29.12%             0 /  0 /  0
+met3              1920            58            3.02%             0 /  0 /  0
+met4              1128            11            0.98%             0 /  0 /  0
+met5               270             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             9047          1671           18.47%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 19464 um
+[INFO GRT-0014] Routed nets: 526
+%OL_CREATE_REPORT antenna.rpt
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+%OL_END_REPORT
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                76     285.27
+  Tap cell                                140     175.17
+  Timing Repair Buffer                     40     266.51
+  Inverter                                 19      76.32
+  Multi-Input combinational cell          447    3261.88
+  Total                                   722    4065.15
+Writing OpenROAD database to '/home/letienthanh/8bitalu/runs/RUN_2026-08-18_08-14-16/37-openroad-globalrouting/alu8bit.odb'…
+Writing layout to '/home/letienthanh/8bitalu/runs/RUN_2026-08-18_08-14-16/37-openroad-globalrouting/alu8bit.def'…

@@ -1,0 +1,345 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= max_tt_025C_1v80 Corner ===================================
+
+Startpoint: op_a[5] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[5] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.002823    0.019831    0.010442    2.010442 ^ op_a[5] (in)
+                                                         op_a[5] (net)
+                      0.019831    0.000000    2.010442 ^ input10/A (sky130_fd_sc_hd__clkbuf_2)
+     5    0.030037    0.167048    0.180426    2.190868 ^ input10/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net10 (net)
+                      0.167215    0.004324    2.195192 ^ _839_/A1 (sky130_fd_sc_hd__a32o_1)
+     1    0.002197    0.045936    0.172298    2.367489 ^ _839_/X (sky130_fd_sc_hd__a32o_1)
+                                                         _318_ (net)
+                      0.045936    0.000147    2.367636 ^ _842_/A (sky130_fd_sc_hd__or3_1)
+     1    0.006503    0.068913    0.118344    2.485980 ^ _842_/X (sky130_fd_sc_hd__or3_1)
+                                                         net26 (net)
+                      0.068916    0.000522    2.486502 ^ output26/A (sky130_fd_sc_hd__buf_4)
+     1    0.034606    0.103204    0.164552    2.651054 ^ output26/X (sky130_fd_sc_hd__buf_4)
+                                                         op_out[5] (net)
+                      0.103234    0.001698    2.652752 ^ op_out[5] (out)
+                                              2.652752   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.652752   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.402752   slack (MET)
+
+
+Startpoint: inst[2] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[0] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.003307    0.009798    0.005334    2.005334 v inst[2] (in)
+                                                         inst[2] (net)
+                      0.009801    0.000000    2.005334 v input3/A (sky130_fd_sc_hd__clkbuf_2)
+     8    0.027805    0.109492    0.154011    2.159344 v input3/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net3 (net)
+                      0.109697    0.003585    2.162929 v _459_/A (sky130_fd_sc_hd__inv_2)
+     4    0.011732    0.066195    0.097163    2.260092 ^ _459_/Y (sky130_fd_sc_hd__inv_2)
+                                                         _199_ (net)
+                      0.066199    0.000585    2.260678 ^ _685_/B1 (sky130_fd_sc_hd__o2111a_1)
+     1    0.003314    0.053100    0.185879    2.446557 ^ _685_/X (sky130_fd_sc_hd__o2111a_1)
+                                                         _156_ (net)
+                      0.053100    0.000161    2.446718 ^ _700_/B (sky130_fd_sc_hd__or3_4)
+     1    0.010246    0.044334    0.124326    2.571044 ^ _700_/X (sky130_fd_sc_hd__or3_4)
+                                                         net21 (net)
+                      0.044355    0.000882    2.571926 ^ output21/A (sky130_fd_sc_hd__buf_8)
+     1    0.034765    0.066586    0.115350    2.687276 ^ output21/X (sky130_fd_sc_hd__buf_8)
+                                                         op_out[0] (net)
+                      0.066691    0.001778    2.689054 ^ op_out[0] (out)
+                                              2.689054   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.689054   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.439054   slack (MET)
+
+
+Startpoint: inst[2] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[4] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.003537    0.022935    0.012947    2.012947 ^ inst[2] (in)
+                                                         inst[2] (net)
+                      0.022936    0.000000    2.012947 ^ input3/A (sky130_fd_sc_hd__clkbuf_2)
+     8    0.029499    0.164122    0.180027    2.192974 ^ input3/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net3 (net)
+                      0.164217    0.003251    2.196225 ^ _690_/A (sky130_fd_sc_hd__or4b_4)
+     8    0.038117    0.119722    0.225398    2.421623 ^ _690_/X (sky130_fd_sc_hd__or4b_4)
+                                                         _161_ (net)
+                      0.120009    0.004770    2.426393 ^ _798_/A1 (sky130_fd_sc_hd__o31ai_1)
+     1    0.005714    0.060370    0.107278    2.533670 v _798_/Y (sky130_fd_sc_hd__o31ai_1)
+                                                         net25 (net)
+                      0.060372    0.000439    2.534109 v output25/A (sky130_fd_sc_hd__buf_4)
+     1    0.034590    0.059488    0.174481    2.708590 v output25/X (sky130_fd_sc_hd__buf_4)
+                                                         op_out[4] (net)
+                      0.059548    0.001694    2.710284 v op_out[4] (out)
+                                              2.710284   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.710284   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.460284   slack (MET)
+
+
+Startpoint: op_a[7] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[6] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.003618    0.023287    0.013231    2.013232 ^ op_a[7] (in)
+                                                         op_a[7] (net)
+                      0.023288    0.000000    2.013232 ^ input12/A (sky130_fd_sc_hd__clkbuf_4)
+     9    0.049431    0.155348    0.204929    2.218161 ^ input12/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         net12 (net)
+                      0.155586    0.005010    2.223171 ^ _883_/A1 (sky130_fd_sc_hd__a211o_1)
+     1    0.004980    0.053245    0.155445    2.378616 ^ _883_/X (sky130_fd_sc_hd__a211o_1)
+                                                         _365_ (net)
+                      0.053248    0.000438    2.379054 ^ _884_/C1 (sky130_fd_sc_hd__a211o_1)
+     1    0.009062    0.086184    0.125821    2.504875 ^ _884_/X (sky130_fd_sc_hd__a211o_1)
+                                                         _366_ (net)
+                      0.086187    0.000688    2.505563 ^ _885_/B1 (sky130_fd_sc_hd__a31o_1)
+     1    0.005862    0.066858    0.120823    2.626386 ^ _885_/X (sky130_fd_sc_hd__a31o_1)
+                                                         net27 (net)
+                      0.066859    0.000429    2.626815 ^ output27/A (sky130_fd_sc_hd__buf_6)
+     1    0.035146    0.078281    0.133062    2.759877 ^ output27/X (sky130_fd_sc_hd__buf_6)
+                                                         op_out[6] (net)
+                      0.078390    0.001942    2.761819 ^ op_out[6] (out)
+                                              2.761819   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.761819   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.511819   slack (MET)
+
+
+Startpoint: inst[2] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[3] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.003537    0.022935    0.012947    2.012947 ^ inst[2] (in)
+                                                         inst[2] (net)
+                      0.022936    0.000000    2.012947 ^ input3/A (sky130_fd_sc_hd__clkbuf_2)
+     8    0.029499    0.164122    0.180027    2.192974 ^ input3/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net3 (net)
+                      0.164217    0.003251    2.196225 ^ _690_/A (sky130_fd_sc_hd__or4b_4)
+     8    0.038117    0.119722    0.225398    2.421623 ^ _690_/X (sky130_fd_sc_hd__or4b_4)
+                                                         _161_ (net)
+                      0.119904    0.003724    2.425347 ^ _749_/A (sky130_fd_sc_hd__or3b_1)
+     1    0.003016    0.039378    0.123910    2.549257 ^ _749_/X (sky130_fd_sc_hd__or3b_1)
+                                                         _221_ (net)
+                      0.039379    0.000222    2.549479 ^ _770_/B (sky130_fd_sc_hd__nand2b_1)
+     1    0.002050    0.028638    0.044238    2.593716 v _770_/Y (sky130_fd_sc_hd__nand2b_1)
+                                                         net24 (net)
+                      0.028639    0.000145    2.593861 v output24/A (sky130_fd_sc_hd__buf_2)
+     1    0.034522    0.090589    0.172733    2.766593 v output24/X (sky130_fd_sc_hd__buf_2)
+                                                         op_out[3] (net)
+                      0.090625    0.001666    2.768260 v op_out[3] (out)
+                                              2.768260   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.768260   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.518260   slack (MET)
+
+
+Startpoint: inst[2] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[2] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.003537    0.022935    0.012947    2.012947 ^ inst[2] (in)
+                                                         inst[2] (net)
+                      0.022936    0.000000    2.012947 ^ input3/A (sky130_fd_sc_hd__clkbuf_2)
+     8    0.029499    0.164122    0.180027    2.192974 ^ input3/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net3 (net)
+                      0.164217    0.003251    2.196225 ^ _690_/A (sky130_fd_sc_hd__or4b_4)
+     8    0.038117    0.119722    0.225398    2.421623 ^ _690_/X (sky130_fd_sc_hd__or4b_4)
+                                                         _161_ (net)
+                      0.119963    0.004349    2.425972 ^ _725_/B1 (sky130_fd_sc_hd__a31oi_1)
+     1    0.002614    0.042894    0.053298    2.479270 v _725_/Y (sky130_fd_sc_hd__a31oi_1)
+                                                         _195_ (net)
+                      0.042894    0.000186    2.479456 v _741_/A2 (sky130_fd_sc_hd__a21o_1)
+     1    0.004924    0.040373    0.180640    2.660095 v _741_/X (sky130_fd_sc_hd__a21o_1)
+                                                         net23 (net)
+                      0.040376    0.000375    2.660471 v output23/A (sky130_fd_sc_hd__buf_6)
+     1    0.034392    0.044062    0.134075    2.794546 v output23/X (sky130_fd_sc_hd__buf_6)
+                                                         op_out[2] (net)
+                      0.044141    0.001635    2.796181 v op_out[2] (out)
+                                              2.796181   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.796181   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.546181   slack (MET)
+
+
+Startpoint: op_a[1] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[1] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.002720    0.019384    0.010078    2.010078 ^ op_a[1] (in)
+                                                         op_a[1] (net)
+                      0.019385    0.000000    2.010078 ^ input6/A (sky130_fd_sc_hd__buf_1)
+     3    0.021746    0.258351    0.219746    2.229824 ^ input6/X (sky130_fd_sc_hd__buf_1)
+                                                         net6 (net)
+                      0.258393    0.002747    2.232571 ^ _703_/A1 (sky130_fd_sc_hd__o22a_1)
+     1    0.002957    0.042829    0.188671    2.421242 ^ _703_/X (sky130_fd_sc_hd__o22a_1)
+                                                         _173_ (net)
+                      0.042830    0.000180    2.421422 ^ _710_/A (sky130_fd_sc_hd__or3_1)
+     1    0.010211    0.100958    0.140621    2.562043 ^ _710_/X (sky130_fd_sc_hd__or3_1)
+                                                         _180_ (net)
+                      0.100960    0.000609    2.562651 ^ _718_/B (sky130_fd_sc_hd__or2_4)
+     1    0.007601    0.038776    0.129512    2.692163 ^ _718_/X (sky130_fd_sc_hd__or2_4)
+                                                         net22 (net)
+                      0.038778    0.000579    2.692743 ^ output22/A (sky130_fd_sc_hd__buf_8)
+     1    0.034966    0.066882    0.113589    2.806332 ^ output22/X (sky130_fd_sc_hd__buf_8)
+                                                         op_out[1] (net)
+                      0.066991    0.001831    2.808163 ^ op_out[1] (out)
+                                              2.808163   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.808163   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.558163   slack (MET)
+
+
+Startpoint: op_a[7] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: op_out[7] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.003618    0.023287    0.013231    2.013232 ^ op_a[7] (in)
+                                                         op_a[7] (net)
+                      0.023288    0.000000    2.013232 ^ input12/A (sky130_fd_sc_hd__clkbuf_4)
+     9    0.049431    0.155348    0.204929    2.218161 ^ input12/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         net12 (net)
+                      0.155577    0.004917    2.223077 ^ _921_/A1 (sky130_fd_sc_hd__a32o_1)
+     1    0.003548    0.055012    0.181445    2.404522 ^ _921_/X (sky130_fd_sc_hd__a32o_1)
+                                                         _406_ (net)
+                      0.055013    0.000235    2.404757 ^ _922_/C1 (sky130_fd_sc_hd__a211o_1)
+     1    0.009378    0.088658    0.128250    2.533008 ^ _922_/X (sky130_fd_sc_hd__a211o_1)
+                                                         _407_ (net)
+                      0.088662    0.000734    2.533741 ^ _923_/B1 (sky130_fd_sc_hd__a311o_1)
+     1    0.005804    0.074724    0.139296    2.673038 ^ _923_/X (sky130_fd_sc_hd__a311o_1)
+                                                         net28 (net)
+                      0.074725    0.000425    2.673463 ^ output28/A (sky130_fd_sc_hd__buf_6)
+     1    0.033994    0.076195    0.134323    2.807786 ^ output28/X (sky130_fd_sc_hd__buf_6)
+                                                         op_out[7] (net)
+                      0.076234    0.001602    2.809387 ^ op_out[7] (out)
+                                              2.809387   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.809387   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.559387   slack (MET)
+
+
+

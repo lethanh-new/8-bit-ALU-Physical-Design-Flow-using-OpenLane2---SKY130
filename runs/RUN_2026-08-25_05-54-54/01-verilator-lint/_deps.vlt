@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/letienthanh/8bitalu/8-bit-ALU-Physical-Design-Flow-using-OpenLane2---SKY130/runs/RUN_2026-08-25_05-54-54/tmp/0febe84bf7684fa29efdd7731e2d8966.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/letienthanh/8bitalu/8-bit-ALU-Physical-Design-Flow-using-OpenLane2---SKY130/runs/RUN_2026-08-25_05-54-54/tmp/0febe84bf7684fa29efdd7731e2d8966.bb.v"

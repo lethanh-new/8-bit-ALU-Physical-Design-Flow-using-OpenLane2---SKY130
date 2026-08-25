@@ -1,0 +1,13 @@
+
+===========================================================================
+Violator List
+============================================================================
+[setup in-out] op_b[4] -> op_out[0] : -3.501972
+[setup in-out] op_b[4] -> op_out[1] : -2.223134
+[setup in-out] op_b[4] -> op_out[2] : -0.857598
+Writing metric timing__hold_vio__count__corner:nom_tt_025C_1v80: 0
+Writing metric timing__hold_r2r__ws__corner:nom_tt_025C_1v80: 1e30
+Writing metric timing__hold_r2r_vio__count__corner:nom_tt_025C_1v80: 0
+Writing metric timing__setup_vio__count__corner:nom_tt_025C_1v80: 3
+Writing metric timing__setup_r2r__ws__corner:nom_tt_025C_1v80: 1e30
+Writing metric timing__setup_r2r_vio__count__corner:nom_tt_025C_1v80: 0

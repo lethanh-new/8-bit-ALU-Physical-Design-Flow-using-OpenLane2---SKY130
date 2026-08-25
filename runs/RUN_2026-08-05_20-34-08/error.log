@@ -1,0 +1,14 @@
+Subprocess had a non-zero exit.
+Last 10 line(s):
+wasmtime._trap.Trap: error while executing at wasm backtrace:
+    0: 0xb4009e - <unknown>!<wasm function 17942>
+    1: 0xb3b587 - <unknown>!<wasm function 17852>
+    2: 0xb3b5b0 - <unknown>!<wasm function 17853>
+    3: 0xb5c45f - <unknown>!<wasm function 18250>
+    4: 0xb3fe2a - <unknown>!<wasm function 17917>
+    5: 0x10eb4 - <unknown>!<wasm function 25>
+
+Caused by:
+    wasm trap: wasm `unreachable` instruction executed
+
+Full log file: 'runs/RUN_2026-08-05_20-34-08/05-yosys-jsonheader/yosys-jsonheader.log'

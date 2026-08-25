@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/letienthanh/8bitalu/runs/RUN_2026-08-18_08-14-16/50-openroad-fillinsertion/or_metrics_out.json /nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/openroad/fill.tcl

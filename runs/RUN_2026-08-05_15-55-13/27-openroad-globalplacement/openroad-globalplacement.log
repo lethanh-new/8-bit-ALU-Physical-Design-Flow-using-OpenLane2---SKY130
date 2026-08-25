@@ -1,0 +1,130 @@
+Reading OpenROAD database at '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_15-55-13/24-openroad-ioplacement/alu8bit.odb'…
+Reading library file at '/home/letienthanh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/home/letienthanh/8bitalu/constraints/alu.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[WARNING STA-0450] virtual clock virtual_clk can not be propagated.
+[INFO] Setting RC values…
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
++ global_placement -density 0.5 -timing_driven -routability_driven -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 109.940 114.240 ) um
+[INFO GPL-0006] NumInstances:               682
+[INFO GPL-0007] NumPlaceInstances:          466
+[INFO GPL-0008] NumFixedInstances:          216
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                    486
+[INFO GPL-0011] NumPins:                   1795
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 115.540 126.260 ) um
+[INFO GPL-0013] CoreBBox: (  5.520 10.880 ) ( 109.940 114.240 ) um
+[INFO GPL-0016] CoreArea:             10792.851 um^2
+[INFO GPL-0017] NonPlaceInstsArea:      460.442 um^2
+[INFO GPL-0018] PlaceInstsArea:        4367.939 um^2
+[INFO GPL-0019] Util:                    42.274 %
+[INFO GPL-0020] StdInstsArea:          4367.939 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000011 HPWL: 11230964
+[InitialPlace]  Iter: 2 CG residual: 0.00000008 HPWL: 5833891
+[InitialPlace]  Iter: 3 CG residual: 0.00000010 HPWL: 5720932
+[InitialPlace]  Iter: 4 CG residual: 0.00000008 HPWL: 5716397
+[InitialPlace]  Iter: 5 CG residual: 0.00000009 HPWL: 5690517
+[INFO GPL-0031] FillerInit:NumGCells:       552
+[INFO GPL-0032] FillerInit:NumGNets:        486
+[INFO GPL-0033] FillerInit:NumGPins:       1795
+[INFO GPL-0023] TargetDensity:            0.500
+[INFO GPL-0024] AvrgPlaceInstArea:        9.373 um^2
+[INFO GPL-0025] IdealBinArea:            18.747 um^2
+[INFO GPL-0026] IdealBinCnt:                575
+[INFO GPL-0027] TotalBinArea:         10792.851 um^2
+[INFO GPL-0028] BinCnt:        16     16
+[INFO GPL-0029] BinSize: (  6.527  6.460 )
+[INFO GPL-0030] NumBins: 256
+[NesterovSolve] Iter:    1 overflow: 0.956 HPWL: 2855610
+[NesterovSolve] Iter:   10 overflow: 0.929 HPWL: 3129091
+[NesterovSolve] Iter:   20 overflow: 0.926 HPWL: 3149315
+[NesterovSolve] Iter:   30 overflow: 0.927 HPWL: 3144798
+[NesterovSolve] Iter:   40 overflow: 0.924 HPWL: 3144539
+[NesterovSolve] Iter:   50 overflow: 0.928 HPWL: 3144808
+[NesterovSolve] Iter:   60 overflow: 0.933 HPWL: 3146200
+[NesterovSolve] Iter:   70 overflow: 0.932 HPWL: 3147563
+[NesterovSolve] Iter:   80 overflow: 0.931 HPWL: 3149867
+[NesterovSolve] Iter:   90 overflow: 0.932 HPWL: 3152737
+[NesterovSolve] Iter:  100 overflow: 0.932 HPWL: 3158677
+[NesterovSolve] Iter:  110 overflow: 0.932 HPWL: 3170898
+[NesterovSolve] Iter:  120 overflow: 0.928 HPWL: 3194227
+[NesterovSolve] Iter:  130 overflow: 0.916 HPWL: 3232957
+[NesterovSolve] Iter:  140 overflow: 0.913 HPWL: 3294026
+[NesterovSolve] Iter:  150 overflow: 0.907 HPWL: 3392736
+[NesterovSolve] Iter:  160 overflow: 0.898 HPWL: 3552887
+[NesterovSolve] Iter:  170 overflow: 0.881 HPWL: 3738718
+[NesterovSolve] Iter:  180 overflow: 0.858 HPWL: 3953302
+[NesterovSolve] Iter:  190 overflow: 0.831 HPWL: 4221696
+[NesterovSolve] Iter:  200 overflow: 0.811 HPWL: 4459120
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 6.87e-09
+[INFO GPL-0103] Timing-driven: weighted 47 nets.
+[NesterovSolve] Iter:  210 overflow: 0.772 HPWL: 4765840
+[NesterovSolve] Iter:  220 overflow: 0.756 HPWL: 4989137
+[NesterovSolve] Iter:  230 overflow: 0.705 HPWL: 5342759
+[NesterovSolve] Iter:  240 overflow: 0.667 HPWL: 5607563
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 6.95e-09
+[INFO GPL-0103] Timing-driven: weighted 48 nets.
+[NesterovSolve] Iter:  250 overflow: 0.620 HPWL: 5925141
+[NesterovSolve] Snapshot saved at iter = 253
+[NesterovSolve] Iter:  260 overflow: 0.571 HPWL: 6177740
+[NesterovSolve] Iter:  270 overflow: 0.520 HPWL: 6448852
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 6.81e-09
+[INFO GPL-0103] Timing-driven: weighted 48 nets.
+[NesterovSolve] Iter:  280 overflow: 0.468 HPWL: 6690862
+[NesterovSolve] Iter:  290 overflow: 0.423 HPWL: 6923656
+[NesterovSolve] Iter:  300 overflow: 0.372 HPWL: 7118560
+[NesterovSolve] Iter:  310 overflow: 0.327 HPWL: 7276580
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileBBox: (    0    0 ) ( 6900 6900 ) DBU
+[INFO GPL-0038] TileCnt:      16   18
+[INFO GPL-0040] NumTiles: 288
+[INFO GPL-0081] TotalRouteOverflow: 0
+[INFO GPL-0082] OverflowTileCnt: 0
+[INFO GPL-0083] 0.5%RC: 0.8141320943832397
+[INFO GPL-0084] 1.0%RC: 0.8042129675547282
+[INFO GPL-0085] 2.0%RC: 0.7772865990797678
+[INFO GPL-0086] 5.0%RC: 0.7363548755645752
+[INFO GPL-0087] FinalRC: 0.8091725
+[INFO GPL-0077] FinalRC lower than targetRC(1.01), routability not needed.
+[NesterovSolve] Iter:  320 overflow: 0.293 HPWL: 7382516
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 6.74e-09
+[INFO GPL-0103] Timing-driven: weighted 48 nets.
+[NesterovSolve] Iter:  330 overflow: 0.261 HPWL: 7508617
+[NesterovSolve] Iter:  340 overflow: 0.238 HPWL: 7620048
+[NesterovSolve] Iter:  350 overflow: 0.209 HPWL: 7694767
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 6.68e-09
+[INFO GPL-0103] Timing-driven: weighted 48 nets.
+[NesterovSolve] Iter:  360 overflow: 0.187 HPWL: 7766437
+[NesterovSolve] Iter:  370 overflow: 0.165 HPWL: 7845174
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 6.8e-09
+[INFO GPL-0103] Timing-driven: weighted 48 nets.
+[NesterovSolve] Iter:  380 overflow: 0.141 HPWL: 7918120
+[NesterovSolve] Iter:  390 overflow: 0.119 HPWL: 7986660
+[NesterovSolve] Iter:  400 overflow: 0.098 HPWL: 8049123
+[NesterovSolve] Finished with Overflow: 0.097729
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                76     285.27
+  Tap cell                                140     175.17
+  Inverter                                 19      71.32
+  Multi-Input combinational cell          447    4296.62
+  Total                                   682    4828.38
+Writing OpenROAD database to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_15-55-13/27-openroad-globalplacement/alu8bit.odb'…
+Writing netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_15-55-13/27-openroad-globalplacement/alu8bit.nl.v'…
+Writing powered netlist to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_15-55-13/27-openroad-globalplacement/alu8bit.pnl.v'…
+Writing layout to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_15-55-13/27-openroad-globalplacement/alu8bit.def'…
+Writing timing constraints to '/home/letienthanh/8bitalu/runs/RUN_2026-08-05_15-55-13/27-openroad-globalplacement/alu8bit.sdc'…

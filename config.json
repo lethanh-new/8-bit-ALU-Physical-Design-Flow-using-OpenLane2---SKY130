@@ -1,0 +1,13 @@
+{
+  "DESIGN_NAME": "alu8bit",
+  "VERILOG_FILES": [
+    "dir::rtl/alu.v"
+  ],
+  "CLOCK_PORT": null,
+  "CLOCK_PERIOD": 25.0,
+  "PNR_SDC_FILE": "dir::constraints/alu.sdc",
+  "SIGNOFF_SDC_FILE": "dir::constraints/alu.sdc",
+  "RUN_CTS": false,
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 50
+}

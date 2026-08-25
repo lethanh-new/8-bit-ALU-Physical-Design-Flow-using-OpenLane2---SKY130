@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/home/letienthanh/openlane-env/bin/yosys", line 8, in <module>
+    sys.exit(_run_yosys_argv())
+  File "/home/letienthanh/openlane-env/lib/python3.8/site-packages/yowasp_yosys/__init__.py", line 16, in _run_yosys_argv
+    sys.exit(run_yosys(sys.argv[1:]))
+  File "/home/letienthanh/openlane-env/lib/python3.8/site-packages/yowasp_yosys/__init__.py", line 11, in run_yosys
+    return yowasp_runtime.run_wasm(__package__, "yosys.wasm", resources=["share"],
+  File "/home/letienthanh/openlane-env/lib/python3.8/site-packages/yowasp_runtime/__init__.py", line 147, in run_wasm
+    raise exception # re-raise to preserve backtrace
+  File "/home/letienthanh/openlane-env/lib/python3.8/site-packages/yowasp_runtime/__init__.py", line 134, in run
+    app.exports(store)["_start"](store)
+  File "/home/letienthanh/openlane-env/lib/python3.8/site-packages/wasmtime/_func.py", line 103, in __call__
+    raise WasmtimeError._from_ptr(error)
+  File "/usr/local/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/home/letienthanh/openlane-env/lib/python3.8/site-packages/wasmtime/_func.py", line 265, in enter_wasm
+    raise trap_obj
+wasmtime._trap.Trap: error while executing at wasm backtrace:
+    0: 0xb4009e - <unknown>!<wasm function 17942>
+    1: 0xb3b587 - <unknown>!<wasm function 17852>
+    2: 0xb3b5b0 - <unknown>!<wasm function 17853>
+    3: 0xb5c45f - <unknown>!<wasm function 18250>
+    4: 0xb3fe2a - <unknown>!<wasm function 17917>
+    5: 0x10eb4 - <unknown>!<wasm function 25>
+
+Caused by:
+    wasm trap: wasm `unreachable` instruction executed
